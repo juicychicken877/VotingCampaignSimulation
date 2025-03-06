@@ -1,0 +1,147 @@
+{
+    "name": "Wadowicki",
+    "jsonFileName":  "Wadowicki.json",
+    "voters": [
+        {
+            "PESEL": "13131313131",
+            "firstName": "Stanisław",
+            "secondName": "Rutkowski",
+            "fullName": "Stanisław Rutkowski",
+            "dateOfBirth": "1985-06-21T00:00:00"
+        },
+        {
+            "PESEL": "46464646464",
+            "firstName": "Wanda",
+            "secondName": "Szewczyk",
+            "fullName": "Wanda Szewczyk",
+            "dateOfBirth": "2000-08-08T00:00:00"
+        },
+        {
+            "PESEL": "79797979797",
+            "firstName": "Henryk",
+            "secondName": "Walczak",
+            "fullName": "Henryk Walczak",
+            "dateOfBirth": "1972-03-19T00:00:00"
+        },
+        {
+            "PESEL": "37373737373",
+            "firstName": "Jadwiga",
+            "secondName": "Zając",
+            "fullName": "Jadwiga Zając",
+            "dateOfBirth": "2003-10-15T00:00:00"
+        },
+        {
+            "PESEL": "60606060606",
+            "firstName": "Kazimierz",
+            "secondName": "Krupa",
+            "fullName": "Kazimierz Krupa",
+            "dateOfBirth": "1967-11-28T00:00:00"
+        },
+        {
+            "PESEL": "93939393939",
+            "firstName": "Ludmiła",
+            "secondName": "Łukasik",
+            "fullName": "Ludmiła Łukasik",
+            "dateOfBirth": "1989-06-03T00:00:00"
+        },
+        {
+            "PESEL": "25252525252",
+            "firstName": "Marian",
+            "secondName": "Nowakowski",
+            "fullName": "Marian Nowakowski",
+            "dateOfBirth": "1977-09-17T00:00:00"
+        },
+        {
+            "PESEL": "58585858585",
+            "firstName": "Natalia",
+            "secondName": "Pietrzak",
+            "fullName": "Natalia Pietrzak",
+            "dateOfBirth": "1998-03-31T00:00:00"
+        },
+        {
+            "PESEL": "81818181818",
+            "firstName": "Olgierd",
+            "secondName": "Rosiński",
+            "fullName": "Olgierd Rosiński",
+            "dateOfBirth": "1970-07-24T00:00:00"
+        },
+        {
+            "PESEL": "04040404040",
+            "firstName": "Paulina",
+            "secondName": "Sadowska",
+            "fullName": "Paulina Sadowska",
+            "dateOfBirth": "2001-04-16T00:00:00"
+        }
+    ],
+    "comitees": [
+        {
+            "name": "Komitet Wyborczy Nowe Pokolenie"
+        },
+        {
+            "name": "Komitet Wyborczy Dla Każdego"
+        },
+        {
+            "name": "Komitet Wyborczy Wspólna Sprawa"
+        },
+        {
+            "name": "Komitet Wyborczy Nasza Przyszłość"
+        }
+    ],
+    "candidates": [
+        {
+            "PESEL": "71717171717",
+            "firstName": "Ryszard",
+            "secondName": "Szulc",
+            "fullName": "Ryszard Szulc",
+            "politicalParty": "Prawo i Sprawiedliwość",
+            "comitee": {
+                "name": "Komitet Wyborczy Nowe Pokolenie"
+            },
+            "dateOfBirth": "1974-05-22T00:00:00"
+        },
+        {
+            "PESEL": "05050505050",
+            "firstName": "Wioletta",
+            "secondName": "Tomaszewska",
+            "fullName": "Wioletta Tomaszewska",
+            "politicalParty": "Koalicja Obywatelska",
+            "comitee": {
+                "name": "Komitet Wyborczy Dla Każdego"
+            },
+            "dateOfBirth": "1989-12-01T00:00:00"
+        },
+        {
+            "PESEL": "38383838383",
+            "firstName": "Zbigniew",
+            "secondName": "Urban",
+            "fullName": "Zbigniew Urban",
+            "politicalParty": "Polska 2050",
+            "comitee": {
+                "name": "Komitet Wyborczy Wspólna Sprawa"
+            },
+            "dateOfBirth": "1969-02-13T00:00:00"
+        },
+        {
+            "PESEL": "61616161616",
+            "firstName": "Xymena",
+            "secondName": "Wojciechowska",
+            "fullName": "Xymena Wojciechowska",
+            "politicalParty": "Lewica",
+            "comitee": {
+                "name": "Komitet Wyborczy Nasza Przyszłość"
+            },
+            "dateOfBirth": "1998-05-06T00:00:00"
+        },
+        {
+            "PESEL": "94949494949",
+            "firstName": "Zenon",
+            "secondName": "Wróbel",
+            "fullName": "Zenon Wróbel",
+            "politicalParty": "Konfederacja",
+            "comitee": {
+                "name": "Komitet Wyborczy Nowe Pokolenie"
+            },
+            "dateOfBirth": "1980-10-21T00:00:00"
+        }
+    ]
+}

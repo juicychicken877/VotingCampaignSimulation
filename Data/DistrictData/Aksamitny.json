@@ -1,0 +1,206 @@
+{
+  "name": "Aksamitny",
+  "jsonFileName": "Aksamitny.json",
+  "voters": [
+    {
+      "PESEL": "11111111111",
+      "firstName": "Jan",
+      "secondName": "Kowalski",
+      "fullName": "Jan Kowalski",
+      "dateOfBirth": "1980-05-15T00:00:00"
+    },
+    {
+      "PESEL": "22222222222",
+      "firstName": "Anna",
+      "secondName": "Nowak",
+      "fullName": "Anna Nowak",
+      "dateOfBirth": "1992-11-22T00:00:00"
+    },
+    {
+      "PESEL": "33333333333",
+      "firstName": "Piotr",
+      "secondName": "Wi\u015Bniewski",
+      "fullName": "Piotr Wi\u015Bniewski",
+      "dateOfBirth": "1975-08-03T00:00:00"
+    },
+    {
+      "PESEL": "44444444444",
+      "firstName": "Katarzyna",
+      "secondName": "D\u0105browska",
+      "fullName": "Katarzyna D\u0105browska",
+      "dateOfBirth": "2001-02-10T00:00:00"
+    },
+    {
+      "PESEL": "55555555555",
+      "firstName": "Andrzej",
+      "secondName": "Lewandowski",
+      "fullName": "Andrzej Lewandowski",
+      "dateOfBirth": "1968-12-28T00:00:00"
+    },
+    {
+      "PESEL": "66666666666",
+      "firstName": "Magdalena",
+      "secondName": "W\u00F3jcik",
+      "fullName": "Magdalena W\u00F3jcik",
+      "dateOfBirth": "1988-06-09T00:00:00"
+    },
+    {
+      "PESEL": "77777777777",
+      "firstName": "Tomasz",
+      "secondName": "Kami\u0144ski",
+      "fullName": "Tomasz Kami\u0144ski",
+      "dateOfBirth": "1979-09-18T00:00:00"
+    },
+    {
+      "PESEL": "88888888888",
+      "firstName": "Ewa",
+      "secondName": "Kowalczyk",
+      "fullName": "Ewa Kowalczyk",
+      "dateOfBirth": "1995-03-01T00:00:00"
+    },
+    {
+      "PESEL": "99999999999",
+      "firstName": "Marek",
+      "secondName": "Zieli\u0144ski",
+      "fullName": "Marek Zieli\u0144ski",
+      "dateOfBirth": "1972-07-25T00:00:00"
+    },
+    {
+      "PESEL": "00000000000",
+      "firstName": "Karolina",
+      "secondName": "Szyma\u0144ska",
+      "fullName": "Karolina Szyma\u0144ska",
+      "dateOfBirth": "2003-04-30T00:00:00"
+    }
+  ],
+  "comitees": [
+    {
+      "name": "Komitet Wyborczy Solidarno\u015B\u0107"
+    },
+    {
+      "name": "Komitet Wyborczy Nowa Nadzieja"
+    },
+    {
+      "name": "Komitet Wyborczy Razem dla Przysz\u0142o\u015Bci"
+    },
+    {
+      "name": "Komitet Wyborczy Lepsza Polska"
+    }
+  ],
+  "candidates": [
+    {
+      "PESEL": "11111111111",
+      "firstName": "Adam",
+      "secondName": "Jankowski",
+      "fullName": "Adam Jankowski",
+      "politicalParty": "Prawo i Sprawiedliwo\u015B\u0107",
+      "comitee": {
+        "name": "Komitet Wyborczy Solidarno\u015B\u0107"
+      },
+      "dateOfBirth": "1970-01-01T00:00:00"
+    },
+    {
+      "PESEL": "22222222222",
+      "firstName": "Beata",
+      "secondName": "Mazur",
+      "fullName": "Beata Mazur",
+      "politicalParty": "Koalicja Obywatelska",
+      "comitee": {
+        "name": "Komitet Wyborczy Nowa Nadzieja"
+      },
+      "dateOfBirth": "1985-07-12T00:00:00"
+    },
+    {
+      "PESEL": "33333333333",
+      "firstName": "Cezary",
+      "secondName": "Krawczyk",
+      "fullName": "Cezary Krawczyk",
+      "politicalParty": "Polska 2050",
+      "comitee": {
+        "name": "Komitet Wyborczy Razem dla Przysz\u0142o\u015Bci"
+      },
+      "dateOfBirth": "1965-11-30T00:00:00"
+    },
+    {
+      "PESEL": "44444444444",
+      "firstName": "Dorota",
+      "secondName": "Rutkowska",
+      "fullName": "Dorota Rutkowska",
+      "politicalParty": "Lewica",
+      "comitee": {
+        "name": "Komitet Wyborczy Lepsza Polska"
+      },
+      "dateOfBirth": "1998-04-05T00:00:00"
+    },
+    {
+      "PESEL": "55555555555",
+      "firstName": "Ernest",
+      "secondName": "Michalski",
+      "fullName": "Ernest Michalski",
+      "politicalParty": "Konfederacja",
+      "comitee": {
+        "name": "Komitet Wyborczy Solidarno\u015B\u0107"
+      },
+      "dateOfBirth": "1977-08-20T00:00:00"
+    }
+  ],
+  "votes": [],
+  "previousCampaignResults": [
+    {
+      "candidate": {
+        "PESEL": "55555555555",
+        "firstName": "Ernest",
+        "secondName": "Michalski",
+        "fullName": "Ernest Michalski",
+        "politicalParty": "Konfederacja",
+        "comitee": {
+          "name": "Komitet Wyborczy Solidarno\u015B\u0107"
+        },
+        "dateOfBirth": "1977-08-20T00:00:00"
+      },
+      "voteCount": 1
+    },
+    {
+      "candidate": {
+        "PESEL": "44444444444",
+        "firstName": "Dorota",
+        "secondName": "Rutkowska",
+        "fullName": "Dorota Rutkowska",
+        "politicalParty": "Lewica",
+        "comitee": {
+          "name": "Komitet Wyborczy Lepsza Polska"
+        },
+        "dateOfBirth": "1998-04-05T00:00:00"
+      },
+      "voteCount": 1
+    },
+    {
+      "candidate": {
+        "PESEL": "11111111111",
+        "firstName": "Adam",
+        "secondName": "Jankowski",
+        "fullName": "Adam Jankowski",
+        "politicalParty": "Prawo i Sprawiedliwo\u015B\u0107",
+        "comitee": {
+          "name": "Komitet Wyborczy Solidarno\u015B\u0107"
+        },
+        "dateOfBirth": "1970-01-01T00:00:00"
+      },
+      "voteCount": 1
+    },
+    {
+      "candidate": {
+        "PESEL": "22222222222",
+        "firstName": "Beata",
+        "secondName": "Mazur",
+        "fullName": "Beata Mazur",
+        "politicalParty": "Koalicja Obywatelska",
+        "comitee": {
+          "name": "Komitet Wyborczy Nowa Nadzieja"
+        },
+        "dateOfBirth": "1985-07-12T00:00:00"
+      },
+      "voteCount": 1
+    }
+  ]
+}
