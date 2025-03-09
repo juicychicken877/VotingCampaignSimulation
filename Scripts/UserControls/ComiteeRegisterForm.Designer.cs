@@ -36,22 +36,22 @@
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
             label1.Padding = new Padding(10, 10, 0, 0);
-            label1.Size = new Size(887, 54);
+            label1.Size = new Size(827, 49);
             label1.TabIndex = 1;
             label1.Text = "Zarejestruj komitet";
             // 
             // nameInput
             // 
-            nameInput.Location = new Point(16, 68);
+            nameInput.Location = new Point(16, 49);
             nameInput.Margin = new Padding(0);
             nameInput.Name = "nameInput";
             nameInput.PlaceholderText = "Nazwa komitetu";
-            nameInput.Size = new Size(504, 39);
+            nameInput.Size = new Size(504, 29);
             nameInput.TabIndex = 2;
             // 
             // registerBtn
             // 
-            registerBtn.Location = new Point(316, 188);
+            registerBtn.Location = new Point(316, 158);
             registerBtn.Name = "registerBtn";
             registerBtn.Size = new Size(204, 46);
             registerBtn.TabIndex = 5;
@@ -72,7 +72,7 @@
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(0);
             Name = "ComiteeRegisterForm";
-            Size = new Size(933, 624);
+            Size = new Size(827, 587);
             ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
             ResumeLayout(false);
             PerformLayout();

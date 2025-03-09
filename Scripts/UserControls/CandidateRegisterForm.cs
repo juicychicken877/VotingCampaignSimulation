@@ -13,14 +13,12 @@ namespace Wybory.Scripts {
         public DistrictWindow.CandidateRegistrationHandler CandidateRegistrationHandler;
 
         private readonly int NAME_MIN_LENGTH = 3;
-        private List<Comitee> currentComiteesRef = null;
+        private List<Comitee> currentComiteesRef;
         public CandidateRegisterForm() {
             InitializeComponent();
         }
 
         public void UpdateComitees(List<Comitee> currentComitees) {
-            comiteeComboBox.Items.Clear();
-
             comiteeComboBox.DataSource = currentComitees;
             comiteeComboBox.DisplayMember = "name";
             comiteeComboBox.ValueMember = "name";

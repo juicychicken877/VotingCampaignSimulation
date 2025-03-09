@@ -41,7 +41,7 @@
             tabPage3 = new TabPage();
             tabControl3 = new TabControl();
             tabPage7 = new TabPage();
-            comiteeRegisterForm = new UserControls.ComiteeRegisterForm();
+            comiteeRegisterForm = new Wybory.Scripts.UserControls.ComiteeRegisterForm();
             tabPage8 = new TabPage();
             comiteeList = new CustomList();
             tabPage11 = new TabPage();
@@ -70,21 +70,21 @@
             tabControl1.Controls.Add(tabPage3);
             tabControl1.Controls.Add(tabPage11);
             tabControl1.Dock = DockStyle.Fill;
-            tabControl1.ItemSize = new Size(200, 50);
+            tabControl1.ItemSize = new Size(200, 35);
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.Padding = new Point(40, 3);
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(961, 752);
+            tabControl1.Size = new Size(855, 685);
             tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
             tabPage1.Controls.Add(tabControl2);
-            tabPage1.Location = new Point(4, 54);
+            tabPage1.Location = new Point(4, 39);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(953, 694);
+            tabPage1.Size = new Size(847, 642);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Wyborca";
             tabPage1.UseVisualStyleBackColor = true;
@@ -95,21 +95,21 @@
             tabControl2.Controls.Add(tabPage6);
             tabControl2.Controls.Add(tabPage4);
             tabControl2.Dock = DockStyle.Fill;
-            tabControl2.ItemSize = new Size(200, 50);
+            tabControl2.ItemSize = new Size(200, 35);
             tabControl2.Location = new Point(3, 3);
             tabControl2.Name = "tabControl2";
             tabControl2.Padding = new Point(40, 3);
             tabControl2.SelectedIndex = 0;
-            tabControl2.Size = new Size(947, 688);
+            tabControl2.Size = new Size(841, 636);
             tabControl2.TabIndex = 0;
             // 
             // tabPage5
             // 
             tabPage5.Controls.Add(voterRegisterForm);
-            tabPage5.Location = new Point(4, 54);
+            tabPage5.Location = new Point(4, 39);
             tabPage5.Name = "tabPage5";
             tabPage5.Padding = new Padding(3);
-            tabPage5.Size = new Size(939, 630);
+            tabPage5.Size = new Size(833, 593);
             tabPage5.TabIndex = 0;
             tabPage5.Text = "Zarejestruj";
             tabPage5.UseVisualStyleBackColor = true;
@@ -121,16 +121,16 @@
             voterRegisterForm.Location = new Point(3, 3);
             voterRegisterForm.Margin = new Padding(0);
             voterRegisterForm.Name = "voterRegisterForm";
-            voterRegisterForm.Size = new Size(933, 624);
+            voterRegisterForm.Size = new Size(827, 587);
             voterRegisterForm.TabIndex = 0;
             // 
             // tabPage6
             // 
             tabPage6.Controls.Add(voterList);
-            tabPage6.Location = new Point(4, 54);
+            tabPage6.Location = new Point(4, 39);
             tabPage6.Name = "tabPage6";
             tabPage6.Padding = new Padding(3);
-            tabPage6.Size = new Size(939, 630);
+            tabPage6.Size = new Size(833, 593);
             tabPage6.TabIndex = 1;
             tabPage6.Text = "Lista wyborców";
             tabPage6.UseVisualStyleBackColor = true;
@@ -142,15 +142,15 @@
             voterList.Location = new Point(3, 3);
             voterList.Margin = new Padding(4);
             voterList.Name = "voterList";
-            voterList.Size = new Size(933, 624);
+            voterList.Size = new Size(827, 587);
             voterList.TabIndex = 0;
             // 
             // tabPage4
             // 
             tabPage4.Controls.Add(votingRegistrationForm);
-            tabPage4.Location = new Point(4, 54);
+            tabPage4.Location = new Point(4, 39);
             tabPage4.Name = "tabPage4";
-            tabPage4.Size = new Size(939, 630);
+            tabPage4.Size = new Size(833, 593);
             tabPage4.TabIndex = 2;
             tabPage4.Text = "Głosuj";
             tabPage4.UseVisualStyleBackColor = true;
@@ -163,16 +163,16 @@
             votingRegistrationForm.Location = new Point(0, 0);
             votingRegistrationForm.Margin = new Padding(4);
             votingRegistrationForm.Name = "votingRegistrationForm";
-            votingRegistrationForm.Size = new Size(939, 630);
+            votingRegistrationForm.Size = new Size(833, 593);
             votingRegistrationForm.TabIndex = 0;
             // 
             // tabPage2
             // 
             tabPage2.Controls.Add(tabControl4);
-            tabPage2.Location = new Point(4, 54);
+            tabPage2.Location = new Point(4, 39);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(953, 694);
+            tabPage2.Size = new Size(847, 642);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Kandydat";
             tabPage2.UseVisualStyleBackColor = true;
@@ -182,21 +182,21 @@
             tabControl4.Controls.Add(tabPage9);
             tabControl4.Controls.Add(tabPage10);
             tabControl4.Dock = DockStyle.Fill;
-            tabControl4.ItemSize = new Size(250, 50);
+            tabControl4.ItemSize = new Size(250, 35);
             tabControl4.Location = new Point(3, 3);
             tabControl4.Name = "tabControl4";
             tabControl4.Padding = new Point(40, 3);
             tabControl4.SelectedIndex = 0;
-            tabControl4.Size = new Size(947, 688);
+            tabControl4.Size = new Size(841, 636);
             tabControl4.TabIndex = 0;
             // 
             // tabPage9
             // 
             tabPage9.Controls.Add(candidateRegisterForm);
-            tabPage9.Location = new Point(4, 54);
+            tabPage9.Location = new Point(4, 39);
             tabPage9.Name = "tabPage9";
             tabPage9.Padding = new Padding(3);
-            tabPage9.Size = new Size(939, 630);
+            tabPage9.Size = new Size(833, 593);
             tabPage9.TabIndex = 0;
             tabPage9.Text = "Zarejestruj";
             tabPage9.UseVisualStyleBackColor = true;
@@ -208,16 +208,16 @@
             candidateRegisterForm.Location = new Point(3, 3);
             candidateRegisterForm.Margin = new Padding(4);
             candidateRegisterForm.Name = "candidateRegisterForm";
-            candidateRegisterForm.Size = new Size(933, 624);
+            candidateRegisterForm.Size = new Size(827, 587);
             candidateRegisterForm.TabIndex = 0;
             // 
             // tabPage10
             // 
             tabPage10.Controls.Add(candidateList);
-            tabPage10.Location = new Point(4, 54);
+            tabPage10.Location = new Point(4, 39);
             tabPage10.Name = "tabPage10";
             tabPage10.Padding = new Padding(3);
-            tabPage10.Size = new Size(939, 630);
+            tabPage10.Size = new Size(939, 660);
             tabPage10.TabIndex = 1;
             tabPage10.Text = "Lista kandydatów";
             tabPage10.UseVisualStyleBackColor = true;
@@ -229,16 +229,16 @@
             candidateList.Location = new Point(3, 3);
             candidateList.Margin = new Padding(4);
             candidateList.Name = "candidateList";
-            candidateList.Size = new Size(933, 624);
+            candidateList.Size = new Size(933, 654);
             candidateList.TabIndex = 0;
             // 
             // tabPage3
             // 
             tabPage3.Controls.Add(tabControl3);
-            tabPage3.Location = new Point(4, 54);
+            tabPage3.Location = new Point(4, 39);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(953, 694);
+            tabPage3.Size = new Size(847, 642);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Komitet";
             tabPage3.UseVisualStyleBackColor = true;
@@ -248,21 +248,21 @@
             tabControl3.Controls.Add(tabPage7);
             tabControl3.Controls.Add(tabPage8);
             tabControl3.Dock = DockStyle.Fill;
-            tabControl3.ItemSize = new Size(200, 50);
+            tabControl3.ItemSize = new Size(200, 35);
             tabControl3.Location = new Point(3, 3);
             tabControl3.Name = "tabControl3";
             tabControl3.Padding = new Point(40, 3);
             tabControl3.SelectedIndex = 0;
-            tabControl3.Size = new Size(947, 688);
+            tabControl3.Size = new Size(841, 636);
             tabControl3.TabIndex = 0;
             // 
             // tabPage7
             // 
             tabPage7.Controls.Add(comiteeRegisterForm);
-            tabPage7.Location = new Point(4, 54);
+            tabPage7.Location = new Point(4, 39);
             tabPage7.Name = "tabPage7";
             tabPage7.Padding = new Padding(3);
-            tabPage7.Size = new Size(939, 630);
+            tabPage7.Size = new Size(833, 593);
             tabPage7.TabIndex = 0;
             tabPage7.Text = "Zarejestruj";
             tabPage7.UseVisualStyleBackColor = true;
@@ -274,16 +274,16 @@
             comiteeRegisterForm.Location = new Point(3, 3);
             comiteeRegisterForm.Margin = new Padding(0);
             comiteeRegisterForm.Name = "comiteeRegisterForm";
-            comiteeRegisterForm.Size = new Size(933, 624);
+            comiteeRegisterForm.Size = new Size(827, 587);
             comiteeRegisterForm.TabIndex = 0;
             // 
             // tabPage8
             // 
             tabPage8.Controls.Add(comiteeList);
-            tabPage8.Location = new Point(4, 54);
+            tabPage8.Location = new Point(4, 39);
             tabPage8.Name = "tabPage8";
             tabPage8.Padding = new Padding(3);
-            tabPage8.Size = new Size(939, 630);
+            tabPage8.Size = new Size(939, 660);
             tabPage8.TabIndex = 1;
             tabPage8.Text = "Lista komitetów";
             tabPage8.UseVisualStyleBackColor = true;
@@ -295,15 +295,15 @@
             comiteeList.Location = new Point(3, 3);
             comiteeList.Margin = new Padding(4);
             comiteeList.Name = "comiteeList";
-            comiteeList.Size = new Size(933, 624);
+            comiteeList.Size = new Size(933, 654);
             comiteeList.TabIndex = 0;
             // 
             // tabPage11
             // 
             tabPage11.Controls.Add(votingResults);
-            tabPage11.Location = new Point(4, 54);
+            tabPage11.Location = new Point(4, 39);
             tabPage11.Name = "tabPage11";
-            tabPage11.Size = new Size(953, 694);
+            tabPage11.Size = new Size(847, 642);
             tabPage11.TabIndex = 3;
             tabPage11.Text = "Wyniki";
             tabPage11.UseVisualStyleBackColor = true;
@@ -315,14 +315,14 @@
             votingResults.Location = new Point(0, 0);
             votingResults.Margin = new Padding(4);
             votingResults.Name = "votingResults";
-            votingResults.Size = new Size(953, 694);
+            votingResults.Size = new Size(847, 642);
             votingResults.TabIndex = 0;
             // 
             // DistrictWindow
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(961, 752);
+            ClientSize = new Size(855, 685);
             Controls.Add(tabControl1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedSingle;

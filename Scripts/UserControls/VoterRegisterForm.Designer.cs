@@ -40,40 +40,40 @@
             label1.Location = new Point(3, 0);
             label1.Name = "label1";
             label1.Padding = new Padding(10, 10, 0, 0);
-            label1.Size = new Size(914, 54);
+            label1.Size = new Size(824, 45);
             label1.TabIndex = 0;
             label1.Text = "Zarejestruj się jako wyborca";
             // 
             // peselInput
             // 
-            peselInput.Location = new Point(17, 54);
+            peselInput.Location = new Point(17, 45);
             peselInput.Margin = new Padding(0);
             peselInput.Name = "peselInput";
             peselInput.PlaceholderText = "PESEL";
-            peselInput.Size = new Size(504, 39);
+            peselInput.Size = new Size(504, 29);
             peselInput.TabIndex = 1;
             // 
             // firstNameInput
             // 
-            firstNameInput.Location = new Point(17, 113);
+            firstNameInput.Location = new Point(17, 94);
             firstNameInput.Margin = new Padding(0);
             firstNameInput.Name = "firstNameInput";
             firstNameInput.PlaceholderText = "Imię np. Tomasz";
-            firstNameInput.Size = new Size(504, 39);
+            firstNameInput.Size = new Size(504, 29);
             firstNameInput.TabIndex = 2;
             // 
             // secondNameInput
             // 
-            secondNameInput.Location = new Point(17, 172);
+            secondNameInput.Location = new Point(17, 144);
             secondNameInput.Margin = new Padding(0);
             secondNameInput.Name = "secondNameInput";
             secondNameInput.PlaceholderText = "Nazwisko np. Kowalski";
-            secondNameInput.Size = new Size(504, 39);
+            secondNameInput.Size = new Size(504, 29);
             secondNameInput.TabIndex = 3;
             // 
             // registerBtn
             // 
-            registerBtn.Location = new Point(317, 384);
+            registerBtn.Location = new Point(317, 303);
             registerBtn.Name = "registerBtn";
             registerBtn.Size = new Size(204, 46);
             registerBtn.TabIndex = 4;
@@ -83,18 +83,19 @@
             // 
             // birthDatePicker
             // 
-            birthDatePicker.Location = new Point(17, 268);
+            birthDatePicker.Location = new Point(17, 224);
             birthDatePicker.Name = "birthDatePicker";
-            birthDatePicker.Size = new Size(504, 39);
+            birthDatePicker.Size = new Size(504, 29);
             birthDatePicker.TabIndex = 5;
             birthDatePicker.Value = new DateTime(2025, 3, 5, 0, 0, 0, 0);
             // 
             // label2
             // 
-            label2.Location = new Point(3, 211);
+            label2.Location = new Point(0, 173);
+            label2.Margin = new Padding(0);
             label2.Name = "label2";
             label2.Padding = new Padding(10, 10, 0, 0);
-            label2.Size = new Size(914, 54);
+            label2.Size = new Size(824, 48);
             label2.TabIndex = 6;
             label2.Text = "Data urodzenia";
             // 
@@ -115,7 +116,7 @@
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(0);
             Name = "VoterRegisterForm";
-            Size = new Size(920, 615);
+            Size = new Size(827, 587);
             ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -34,33 +34,36 @@
             // 
             // peselLabel
             // 
-            peselLabel.Location = new Point(2, -2);
+            peselLabel.Dock = DockStyle.Top;
+            peselLabel.Location = new Point(0, 0);
             peselLabel.Margin = new Padding(4, 0, 4, 0);
             peselLabel.Name = "peselLabel";
-            peselLabel.Size = new Size(808, 53);
+            peselLabel.Size = new Size(810, 52);
             peselLabel.TabIndex = 0;
             peselLabel.Text = "Osoba głosująca: 00000000000";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(314, 98);
+            label2.Dock = DockStyle.Top;
+            label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            label2.Location = new Point(0, 52);
             label2.Name = "label2";
-            label2.Size = new Size(123, 32);
+            label2.Size = new Size(810, 50);
             label2.TabIndex = 1;
             label2.Text = "Kandydaci";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // candidatesComboBox
             // 
             candidatesComboBox.FormattingEnabled = true;
-            candidatesComboBox.Location = new Point(185, 149);
+            candidatesComboBox.Location = new Point(206, 118);
             candidatesComboBox.Name = "candidatesComboBox";
-            candidatesComboBox.Size = new Size(396, 40);
+            candidatesComboBox.Size = new Size(396, 29);
             candidatesComboBox.TabIndex = 2;
             // 
             // voteBtn
             // 
-            voteBtn.Location = new Point(185, 236);
+            voteBtn.Location = new Point(206, 181);
             voteBtn.Name = "voteBtn";
             voteBtn.Size = new Size(396, 47);
             voteBtn.TabIndex = 3;
@@ -74,7 +77,7 @@
             // 
             // VotingWindow
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(810, 543);
             Controls.Add(voteBtn);
@@ -84,10 +87,9 @@
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
             Name = "VotingWindow";
-            Text = "VotingWindow";
+            Text = "Głosowanie";
             ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

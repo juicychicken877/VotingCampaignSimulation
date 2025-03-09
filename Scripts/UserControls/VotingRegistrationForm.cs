@@ -18,11 +18,11 @@ namespace Wybory.Scripts {
         }
 
         public bool IsCorrect() {
-            Voter voter = districtRef.GetVoters().Find(voter => voter.PESEL == peselInput.Text);
+            Voter? voter = districtRef.voters.Find(voter => voter.PESEL == peselInput.Text);
 
             if (voter != null) {
                 // Go through vote list in district and check if voter already voted
-                if (districtRef.GetVotes().Find(vote => vote.voter.PESEL == voter.PESEL) == null) {
+                if (districtRef.votes.Find(vote => vote.voter.PESEL == voter.PESEL) == null) {
                     errorProvider.SetError(peselInput, null);
                     currentVoter = voter;
                     return true;

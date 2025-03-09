@@ -31,16 +31,17 @@
             // 
             // voteCountLabel
             // 
-            voteCountLabel.Location = new Point(0, 18);
+            voteCountLabel.Dock = DockStyle.Top;
+            voteCountLabel.Location = new Point(0, 0);
             voteCountLabel.Name = "voteCountLabel";
             voteCountLabel.Padding = new Padding(10, 10, 0, 0);
-            voteCountLabel.Size = new Size(944, 54);
+            voteCountLabel.Size = new Size(827, 45);
             voteCountLabel.TabIndex = 1;
             voteCountLabel.Text = "Oddane głosy w aktualnych wyborach (w okręgu): 0";
             // 
             // endVotingBtn
             // 
-            endVotingBtn.Location = new Point(4, 91);
+            endVotingBtn.Location = new Point(3, 48);
             endVotingBtn.Name = "endVotingBtn";
             endVotingBtn.Size = new Size(516, 50);
             endVotingBtn.TabIndex = 2;
@@ -50,34 +51,35 @@
             // 
             // label1
             // 
-            label1.Location = new Point(-1, 164);
+            label1.Location = new Point(0, 110);
             label1.Name = "label1";
             label1.Padding = new Padding(10, 10, 0, 0);
-            label1.Size = new Size(944, 54);
+            label1.Size = new Size(827, 47);
             label1.TabIndex = 3;
             label1.Text = "Wyniki ostatnich wyborów:";
             // 
             // votingResultsCandidateList
             // 
+            votingResultsCandidateList.Dock = DockStyle.Bottom;
             votingResultsCandidateList.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            votingResultsCandidateList.Location = new Point(4, 222);
+            votingResultsCandidateList.Location = new Point(0, 161);
             votingResultsCandidateList.Margin = new Padding(4);
             votingResultsCandidateList.Name = "votingResultsCandidateList";
-            votingResultsCandidateList.Size = new Size(939, 448);
+            votingResultsCandidateList.Size = new Size(827, 426);
             votingResultsCandidateList.TabIndex = 4;
             // 
             // VotingResults
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(votingResultsCandidateList);
             Controls.Add(label1);
             Controls.Add(endVotingBtn);
             Controls.Add(voteCountLabel);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(4);
+            Margin = new Padding(0);
             Name = "VotingResults";
-            Size = new Size(947, 688);
+            Size = new Size(827, 587);
             ResumeLayout(false);
         }
 

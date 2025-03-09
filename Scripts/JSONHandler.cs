@@ -10,27 +10,24 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace Wybory.Scripts {
     public static class JSONHandler {
-        private static readonly string DISTRICT_DATA_DIR_PATH = "D:/LOCAL_Humansoft/Wybory/Data/DistrictData/";
+        private static readonly string DISTRICT_DATA_DIR_PATH = "../../../Data/DistrictData/";
         public static void SaveDistrictDataToJSON(District district) {
             try {
-                DistrictJSON districtJSON = new(district);
-
-                string jsonString = JsonSerializer.Serialize(districtJSON, new JsonSerializerOptions() { WriteIndented = true });
-                string path = DISTRICT_DATA_DIR_PATH + district.GetJSONFileName();
+                string jsonString = JsonSerializer.Serialize(district, new JsonSerializerOptions() { WriteIndented = true });
+                string path = DISTRICT_DATA_DIR_PATH + district.jsonFileName;
                 File.WriteAllText(path, jsonString);
             } catch (Exception ex) {
                 Debug.WriteLine(ex.Message);
             }
         }
-        private static District ConvertToDistrict(DistrictJSON districtJSON) {
-            // If null, create empty list
-            districtJSON.voters ??= new();
-            districtJSON.comitees ??= new();
-            districtJSON.candidates ??= new();
-            districtJSON.votes ??= new();
 
-            return new District(districtJSON);
+        private static void CheckForNulls(District district) {
+            district.voters ??= new();
+            district.votes ??= new();
+            district.candidates ??= new();
+            district.comitees ??= new();
         }
+
         public static List<District> LoadDistrictsFromJSON() {
             List<District> loadedDistricts = new();
 
@@ -40,9 +37,11 @@ namespace Wybory.Scripts {
                 foreach (string fileName in fileNames) {
                     string jsonString = File.ReadAllText(fileName);
 
-                    DistrictJSON districtJSON = JsonSerializer.Deserialize<DistrictJSON>(jsonString);
+                    District district = JsonSerializer.Deserialize<District>(jsonString);
 
-                    loadedDistricts.Add(ConvertToDistrict(districtJSON));
+                    CheckForNulls(district);
+
+                    loadedDistricts.Add(district);
                 }
 
                 return loadedDistricts;
@@ -53,27 +52,4 @@ namespace Wybory.Scripts {
             }
         }
     }
-
-    // Special class for json handling 
-    public class DistrictJSON {
-        public string name { get; set; }
-        public string jsonFileName { get; set; }
-        public List<Voter> voters { get; set; }
-        public List<Comitee> comitees { get; set; }
-        public List<Candidate> candidates { get; set; }
-        public List<VotingSystem.Vote> votes { get; set; }
-        public List<VotingResults.Result> previousCampaignResults { get; set; }
-        public DistrictJSON() { }
-
-        public DistrictJSON(District district) {
-            this.name = district.name;
-            this.jsonFileName = district.GetJSONFileName();
-            this.voters = district.GetVoters();
-            this.comitees = district.GetComitees();
-            this.candidates = district.GetCandidates();
-            this.votes = district.GetVotes();
-            this.previousCampaignResults = district.GetPreviousCampaignResults();
-        }
-    }
-
 }

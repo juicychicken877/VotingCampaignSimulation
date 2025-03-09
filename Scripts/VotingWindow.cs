@@ -17,7 +17,7 @@ namespace Wybory.Scripts {
         public VotingWindow(Voter voter, District district) {
             InitializeComponent();
 
-            candidatesComboBox.DataSource = district.GetCandidates();
+            candidatesComboBox.DataSource = district.candidates;
             candidatesComboBox.DisplayMember = "fullName";
             candidatesComboBox.ValueMember = "PESEL";
             candidatesComboBox.SelectedItem = null;
@@ -38,7 +38,7 @@ namespace Wybory.Scripts {
         }
 
         public Candidate GetSelectedCandidate() {
-            return districtRef.GetCandidates().Find(candidate => candidate.PESEL == candidatesComboBox.SelectedValue.ToString());
+            return districtRef.candidates.Find(candidate => candidate.PESEL == candidatesComboBox.SelectedValue.ToString());
         }
 
         private void voteBtn_Click(object sender, EventArgs e) {

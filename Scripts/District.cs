@@ -1,58 +1,14 @@
 ﻿namespace Wybory.Scripts {
     public class District {
-        public string name;
-        private string jsonFileName;
-        private List<Voter> voters = new();
-        private List<Comitee> comitees = new();
-        private List<Candidate> candidates = new();
-        private List<VotingSystem.Vote> votes = new();
-        private List<VotingResults.Result> previousCampaignResults = new();
+        public string name { get; set; }
+        public string jsonFileName { get; set; }
+        public List<Voter> voters { get; set; }
+        public List<Comitee> comitees { get; set; }
+        public List<Candidate> candidates { get; set; }
+        public List<VotingSystem.Vote> votes { get; set; }
+        public List<VotingResults.Result> previousCampaignResults { get; set; }
 
-        public District(DistrictJSON districtJSON) {
-            this.name = districtJSON.name;
-            this.jsonFileName = districtJSON.jsonFileName;
-            this.voters = districtJSON.voters;
-            this.comitees = districtJSON.comitees;
-            this.candidates = districtJSON.candidates;
-            this.votes = districtJSON.votes;
-            this.previousCampaignResults = districtJSON.previousCampaignResults;
-        }
-        public void AddVote(VotingSystem.Vote newVote) {
-            votes.Add(newVote);
-        }
-        public void AddVoter(Voter newVoter) {
-            voters.Add(newVoter);
-        }
-        public void AddComitee(Comitee newComitee) {
-            comitees.Add(newComitee);
-        }
-        public void AddCandidate(Candidate newCandidate) {
-            candidates.Add(newCandidate);
-        }
-        public List<VotingSystem.Vote> GetVotes() {
-            return votes;
-        }
-        public void ClearVotes() {
-            votes.Clear();
-        }
-        public List<Voter> GetVoters() {
-            return voters;
-        }
-        public List<Comitee> GetComitees() {
-            return comitees;
-        }
-        public List<Candidate> GetCandidates() {
-            return candidates;
-        }
-        public List<VotingResults.Result> GetPreviousCampaignResults() {
-            return previousCampaignResults;
-        }
-        public void SetPreviousCampaignResults(List<VotingResults.Result> newResults) {
-            previousCampaignResults = newResults;
-        }
-        public string GetJSONFileName() {
-            return jsonFileName;
-        }
+        public District() { }
     }
     public class Voter : IListElement {
         public string PESEL { get; set; }

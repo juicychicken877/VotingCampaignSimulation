@@ -32,7 +32,7 @@
             label.Margin = new Padding(0, 5, 0, 5);
             label.Name = "label";
             label.Padding = new Padding(20, 0, 0, 0);
-            label.Size = new Size(900, 50);
+            label.Size = new Size(800, 50);
             label.TabIndex = 0;
             label.Text = "-----------";
             label.TextAlign = ContentAlignment.MiddleLeft;
@@ -46,7 +46,7 @@
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(0);
             Name = "CustomListElement";
-            Size = new Size(900, 50);
+            Size = new Size(800, 50);
             ResumeLayout(false);
         }
 

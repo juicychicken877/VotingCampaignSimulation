@@ -34,9 +34,10 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(3, 3);
+            button1.Location = new Point(2, 2);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(746, 70);
+            button1.Size = new Size(522, 42);
             button1.TabIndex = 0;
             button1.Text = "Aksamitny";
             button1.UseVisualStyleBackColor = true;
@@ -45,9 +46,10 @@
             // label1
             // 
             label1.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(2, 33);
+            label1.Location = new Point(1, 20);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(746, 56);
+            label1.Size = new Size(522, 34);
             label1.TabIndex = 3;
             label1.Text = "Wybierz okręg wyborczy";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -55,9 +57,10 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 12F);
-            button2.Location = new Point(3, 79);
+            button2.Location = new Point(2, 48);
+            button2.Margin = new Padding(2, 2, 2, 2);
             button2.Name = "button2";
-            button2.Size = new Size(746, 70);
+            button2.Size = new Size(522, 42);
             button2.TabIndex = 4;
             button2.Text = "Szydłowiecki";
             button2.UseVisualStyleBackColor = true;
@@ -68,17 +71,19 @@
             flowLayoutPanel1.Controls.Add(button1);
             flowLayoutPanel1.Controls.Add(button2);
             flowLayoutPanel1.Controls.Add(button3);
-            flowLayoutPanel1.Location = new Point(2, 118);
+            flowLayoutPanel1.Location = new Point(1, 71);
+            flowLayoutPanel1.Margin = new Padding(2, 2, 2, 2);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(746, 359);
+            flowLayoutPanel1.Size = new Size(522, 215);
             flowLayoutPanel1.TabIndex = 6;
             // 
             // button3
             // 
             button3.Font = new Font("Segoe UI", 12F);
-            button3.Location = new Point(3, 155);
+            button3.Location = new Point(2, 94);
+            button3.Margin = new Padding(2, 2, 2, 2);
             button3.Name = "button3";
-            button3.Size = new Size(746, 70);
+            button3.Size = new Size(522, 42);
             button3.TabIndex = 5;
             button3.Text = "Wadowicki";
             button3.UseVisualStyleBackColor = true;
@@ -86,14 +91,17 @@
             // 
             // DistrictChoiceWindow
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(749, 477);
+            ClientSize = new Size(524, 286);
             Controls.Add(label1);
             Controls.Add(flowLayoutPanel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(2, 2, 2, 2);
+            MaximizeBox = false;
             Name = "DistrictChoiceWindow";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Wybór okręgu wyborczego";
             flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }

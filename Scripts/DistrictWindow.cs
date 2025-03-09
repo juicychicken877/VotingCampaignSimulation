@@ -35,52 +35,46 @@ namespace Wybory.Scripts {
 
             // Voting Results
             votingResults.OnEndCampaignBtnClicked += EndVotingCampaign;
-            votingResults.Update(district.GetVotes());
+            votingResults.Update(district.votes);
             // If there are any results, display it
-            if (district.GetPreviousCampaignResults() != null)
-                votingResults.DisplayResults(district.GetPreviousCampaignResults());
+            if (district.previousCampaignResults != null)
+                votingResults.DisplayResults(district.previousCampaignResults);
 
-            // Lists in tabs
-            // Cast to IListElement
-            List<IListElement> candidates = district.GetCandidates().Cast<IListElement>().ToList();
-            List<IListElement> comitees = district.GetComitees().Cast<IListElement>().ToList();
-            List<IListElement> voters = district.GetVoters().Cast<IListElement>().ToList();
-
-            // Display list
-            comiteeList.LoadList(comitees);
-            candidateList.LoadList(candidates);
-            voterList.LoadList(voters);
+            // Display lists
+            comiteeList.LoadList(district.comitees.Cast<IListElement>().ToList());
+            candidateList.LoadList(district.candidates.Cast<IListElement>().ToList());
+            voterList.LoadList(district.voters.Cast<IListElement>().ToList());
 
             // Update combo box in candidate register form
-            candidateRegisterForm.UpdateComitees(district.GetComitees());
+            candidateRegisterForm.UpdateComitees(district.comitees);
 
             districtRef = district;
         }
 
         private void EndVotingCampaign(object? sender, EventArgs e) {
             // Display results and set campaign results
-            districtRef.SetPreviousCampaignResults(votingResults.DisplayResults(districtRef.GetVotes()));
+            districtRef.previousCampaignResults = votingResults.DisplayResults(districtRef.votes);
 
-            districtRef.ClearVotes();
+            districtRef.votes.Clear();
 
-            votingResults.Update(districtRef.GetVotes());
+            votingResults.Update(districtRef.votes);
 
             JSONHandler.SaveDistrictDataToJSON(districtRef);
         }
 
         private void VotingSystem_OnVote(object? sender, VotingSystem.OnVoteEventArgs e) {
-            districtRef.AddVote(e.newVote);
+            districtRef.votes.Add(e.newVote);
 
-            votingResults.Update(districtRef.GetVotes());
+            votingResults.Update(districtRef.votes);
 
             JSONHandler.SaveDistrictDataToJSON(districtRef);
         }
 
         private void RegisterVoter(VoterRegisterForm form) {
-            if (form.IsCorrect(districtRef.GetVoters())) {
+            if (form.IsCorrect(districtRef.voters)) {
                 Voter newVoter = form.GetVoterObject();
 
-                districtRef.AddVoter(newVoter);
+                districtRef.voters.Add(newVoter);
 
                 voterList.AddListElement(newVoter);
 
@@ -91,25 +85,25 @@ namespace Wybory.Scripts {
         }
 
         private void RegisterComitee(ComiteeRegisterForm form) {
-            if (form.IsCorrect(districtRef.GetComitees())) {
+            if (form.IsCorrect(districtRef.comitees)) {
                 Comitee newComitee = form.GetComiteeObject();
 
-                districtRef.AddComitee(newComitee);
+                districtRef.comitees.Add(newComitee);
 
                 comiteeList.AddListElement(newComitee);
 
                 form.Clear();
 
-                candidateRegisterForm.UpdateComitees(districtRef.GetComitees());
+                candidateRegisterForm.UpdateComitees(districtRef.comitees);
 
                 JSONHandler.SaveDistrictDataToJSON(districtRef);
             }
         }
         private void RegisterCandidate(CandidateRegisterForm form) {
-            if (form.IsCorrect(districtRef.GetCandidates())) {
+            if (form.IsCorrect(districtRef.candidates)) {
                 Candidate newCandidate = form.GetCandidateObject();
 
-                districtRef.AddCandidate(newCandidate);
+                districtRef.candidates.Add(newCandidate);
 
                 candidateList.AddListElement(newCandidate);
 

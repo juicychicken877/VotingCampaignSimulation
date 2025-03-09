@@ -33,25 +33,26 @@
             // 
             // label1
             // 
+            label1.Dock = DockStyle.Top;
             label1.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(0, 70);
+            label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(917, 76);
+            label1.Size = new Size(827, 109);
             label1.TabIndex = 0;
             label1.Text = "Zarejestruj się by oddać głos";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // peselInput
             // 
-            peselInput.Location = new Point(268, 170);
+            peselInput.Location = new Point(164, 112);
             peselInput.Name = "peselInput";
             peselInput.PlaceholderText = "PESEL";
-            peselInput.Size = new Size(376, 39);
+            peselInput.Size = new Size(503, 29);
             peselInput.TabIndex = 1;
             // 
             // continueBtn
             // 
-            continueBtn.Location = new Point(268, 264);
+            continueBtn.Location = new Point(231, 178);
             continueBtn.Name = "continueBtn";
             continueBtn.Size = new Size(376, 45);
             continueBtn.TabIndex = 2;
@@ -65,15 +66,15 @@
             // 
             // VotingRegistrationForm
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(continueBtn);
             Controls.Add(peselInput);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(4);
+            Margin = new Padding(0);
             Name = "VotingRegistrationForm";
-            Size = new Size(920, 615);
+            Size = new Size(827, 587);
             ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
             ResumeLayout(false);
             PerformLayout();

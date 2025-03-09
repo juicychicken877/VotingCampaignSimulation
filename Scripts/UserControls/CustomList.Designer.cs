@@ -32,21 +32,22 @@
             panel.Dock = DockStyle.Fill;
             panel.FlowDirection = FlowDirection.TopDown;
             panel.Location = new Point(0, 0);
+            panel.Margin = new Padding(0);
             panel.Name = "panel";
             panel.Padding = new Padding(0, 10, 0, 0);
-            panel.Size = new Size(939, 630);
+            panel.Size = new Size(827, 587);
             panel.TabIndex = 0;
             panel.WrapContents = false;
             // 
             // CustomList
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(4);
+            Margin = new Padding(0);
             Name = "CustomList";
-            Size = new Size(939, 630);
+            Size = new Size(827, 587);
             ResumeLayout(false);
         }
 

@@ -144,6 +144,70 @@
       "dateOfBirth": "1977-08-20T00:00:00"
     }
   ],
-  "votes": [],
-  "previousCampaignResults": []
+  "votes": [
+    {
+      "voter": {
+        "PESEL": "11111111111",
+        "firstName": "Jan",
+        "secondName": "Kowalski",
+        "fullName": "Jan Kowalski",
+        "dateOfBirth": "1980-05-15T00:00:00"
+      },
+      "candidate": {
+        "PESEL": "44444444444",
+        "firstName": "Dorota",
+        "secondName": "Rutkowska",
+        "fullName": "Dorota Rutkowska",
+        "politicalParty": "Lewica",
+        "comitee": {
+          "name": "Komitet Wyborczy Lepsza Polska"
+        },
+        "dateOfBirth": "1998-04-05T00:00:00"
+      }
+    }
+  ],
+  "previousCampaignResults": [
+    {
+      "candidate": {
+        "PESEL": "44444444444",
+        "firstName": "Dorota",
+        "secondName": "Rutkowska",
+        "fullName": "Dorota Rutkowska",
+        "politicalParty": "Lewica",
+        "comitee": {
+          "name": "Komitet Wyborczy Lepsza Polska"
+        },
+        "dateOfBirth": "1998-04-05T00:00:00"
+      },
+      "voteCount": 1
+    },
+    {
+      "candidate": {
+        "PESEL": "22222222222",
+        "firstName": "Beata",
+        "secondName": "Mazur",
+        "fullName": "Beata Mazur",
+        "politicalParty": "Koalicja Obywatelska",
+        "comitee": {
+          "name": "Komitet Wyborczy Nowa Nadzieja"
+        },
+        "dateOfBirth": "1985-07-12T00:00:00"
+      },
+      "voteCount": 1
+    },
+    {
+      "candidate": {
+        "PESEL": "55555555555",
+        "firstName": "Ernest",
+        "secondName": "Michalski",
+        "fullName": "Ernest Michalski",
+        "politicalParty": "Konfederacja",
+        "comitee": {
+          "name": "Komitet Wyborczy Solidarno\u015B\u0107"
+        },
+        "dateOfBirth": "1977-08-20T00:00:00"
+      },
+      "voteCount": 1
+    }
+  ]
 }
